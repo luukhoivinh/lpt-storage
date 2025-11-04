@@ -51,9 +51,7 @@
             width: 400%; /* 4 slides * 100% */
         }
         .slide {
-            /* 
-             * FIX (1/2): Sửa lại CSS slide. 
-             * Mỗi slide chiếm 25% chiều rộng của .slides (tổng 400%).
+            /* * Mỗi slide chiếm 25% chiều rộng của .slides (tổng 400%).
              * 25% của 400% = 100% chiều rộng của viewport.
             */
             width: 25%;
@@ -115,13 +113,13 @@
             <!-- Profile Image (Mặt tiền dự án) -->
             <div class="w-28 h-28 mx-auto md:mx-0 rounded-full bg-gray-300 mb-4 overflow-hidden ring-4 ring-yellow-400 ring-offset-4 ring-offset-blue-900">
                 <!-- Sử dụng placeholder an toàn, bạn nên thay bằng ảnh cá nhân -->
-                <img src="https://placehold.co/128x128/fbb400/1f3d61?text=NV+A" alt="Chuyên viên Tư vấn Dự án" class="object-cover w-full h-full">
+                <img src="https://placehold.co/128x128/fbb400/1f3d61?text=LPT" alt="Chuyên viên Tư vấn Dự án" class="object-cover w-full h-full">
             </div>
             
             <!-- Slogan BĐS -->
             <div class="text-center md:text-left md:ml-8 flex-grow">
                 <h1 class="text-5xl font-extrabold tracking-tight sm:text-6xl text-yellow-400">
-                    NGUYỄN VĂN A
+                    LƯU PHƯỚC TÂM
                 </h1>
                 <p class="mt-2 text-xl font-medium text-gray-300">
                     "Tài Sản Vô Giá" - **Senior Full-Stack Developer**
@@ -135,9 +133,9 @@
             <div class="mt-8 md:mt-0 bg-white p-6 rounded-xl shadow-2xl max-w-sm w-full md:w-auto text-gray-900 card-shadow">
                 <h2 class="text-2xl font-bold mb-3 text-[#1f3d61]">Thông Tin Đầu Tư</h2>
                 <ul class="text-base space-y-2">
-                    <li><strong class="text-yellow-600">Hotline:</strong> (+84) 123 456 789</li>
-                    <li><strong class="text-yellow-600">Email:</strong> anva@example.com</li>
-                    <li><strong class="text-yellow-600">LinkedIn:</strong> /in/nguyenvana</li>
+                    <li><strong class="text-yellow-600">Hotline:</strong> (+84) 987 654 321</li>
+                    <li><strong class="text-yellow-600">Email:</strong> phuoctam.luu@example.com</li>
+                    <li><strong class="text-yellow-600">LinkedIn:</strong> /in/luuphuoctam</li>
                     <li class="pt-2"><strong class="text-red-600">Vị trí:</strong> TP. Hồ Chí Minh (Sẵn sàng di chuyển)</li>
                 </ul>
                 <a href="URL_den_file_CV_PDF_cua_ban" target="_blank" class="block mt-4 w-full text-center px-4 py-2 border border-transparent text-lg font-bold rounded-lg shadow-md bds-accent hover:bg-yellow-500 transition duration-300">
@@ -331,11 +329,11 @@
         <h3 class="text-3xl font-bold text-yellow-400 mb-4">ĐỪNG BỎ LỠ CƠ HỘI ĐẦU TƯ VÀO DỰ ÁN NÀY!</h3>
         <p class="text-lg font-medium">Chúng tôi cam kết mang lại **giá trị cốt lõi** và **lợi nhuận vượt trội** cho đối tác.</p>
         <div class="mt-6 space-x-6">
-            <a href="mailto:anva@example.com" class="text-yellow-400 hover:text-yellow-300 transition duration-300 text-xl font-bold">Gửi Email Tư Vấn</a>
+            <a href="mailto:phuoctam.luu@example.com" class="text-yellow-400 hover:text-yellow-300 transition duration-300 text-xl font-bold">Gửi Email Tư Vấn</a>
             <span class="text-gray-500">|</span>
-            <a href="https://linkedin.com/in/nguyenvana" target="_blank" class="text-yellow-400 hover:text-yellow-300 transition duration-300 text-xl font-bold">Hồ Sơ LinkedIn</a>
+            <a href="https://linkedin.com/in/luuphuoctam" target="_blank" class="text-yellow-400 hover:text-yellow-300 transition duration-300 text-xl font-bold">Hồ Sơ LinkedIn</a>
         </div>
-        <p class="mt-6 text-sm text-gray-500">&copy; 2025 Nguyễn Văn A. Nhà Phát Triển Độc Quyền - Giá Trị Bền Vững.</p>
+        <p class="mt-6 text-sm text-gray-500">&copy; 2025 Lưu Phước Tâm. Nhà Phát Triển Độc Quyền - Giá Trị Bền Vững.</p>
     </footer>
 
     <script>
@@ -359,12 +357,7 @@
                 currentIndex = index;
             }
 
-            // Update transform
-            /*
-             * FIX (2/2): Sửa lại logic JavaScript.
-             * Chúng ta cần di chuyển 25% (vì mỗi slide chiếm 25%) 
-             * nhân với chỉ số (currentIndex).
-            */
+            // Update transform. Dịch chuyển 25% cho mỗi slide (vì 4 slides / 100% = 25%)
             const offset = -currentIndex * 25; 
             slidesContainer.style.transform = `translateX(${offset}%)`;
 
